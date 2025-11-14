@@ -1,0 +1,266 @@
+﻿namespace Quan_Ly_Tai_San
+{
+    partial class FrmThuChiCaNhan
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblTieuDe = new Label();
+            lblLoaiGD = new Label();
+            lblLoaiChiTieu = new Label();
+            lblNgayGD = new Label();
+            lblGhiChu = new Label();
+            textBox1 = new TextBox();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            dateNgayGiaoDich = new DateTimePicker();
+            btnThem = new Button();
+            btnSua = new Button();
+            btnXoa = new Button();
+            btnLuu = new Button();
+            btnThoat = new Button();
+            gridThuChiCaNhan = new DataGridView();
+            cboTenHM = new ComboBox();
+            lblGiaTien = new Label();
+            ((System.ComponentModel.ISupportInitialize)gridThuChiCaNhan).BeginInit();
+            SuspendLayout();
+            // 
+            // lblTieuDe
+            // 
+            lblTieuDe.AutoSize = true;
+            lblTieuDe.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            lblTieuDe.Location = new Point(355, 20);
+            lblTieuDe.Margin = new Padding(5, 0, 5, 0);
+            lblTieuDe.Name = "lblTieuDe";
+            lblTieuDe.Size = new Size(465, 41);
+            lblTieuDe.TabIndex = 0;
+            lblTieuDe.Text = "DANH MỤC THU CHI CÁ NHÂN";
+            // 
+            // lblLoaiGD
+            // 
+            lblLoaiGD.AutoSize = true;
+            lblLoaiGD.Font = new Font("Segoe UI", 12F);
+            lblLoaiGD.Location = new Point(48, 77);
+            lblLoaiGD.Name = "lblLoaiGD";
+            lblLoaiGD.Size = new Size(174, 32);
+            lblLoaiGD.TabIndex = 2;
+            lblLoaiGD.Text = "Loại giao dịch: ";
+            // 
+            // lblLoaiChiTieu
+            // 
+            lblLoaiChiTieu.AutoSize = true;
+            lblLoaiChiTieu.Font = new Font("Segoe UI", 12F);
+            lblLoaiChiTieu.Location = new Point(48, 155);
+            lblLoaiChiTieu.Name = "lblLoaiChiTieu";
+            lblLoaiChiTieu.Size = new Size(155, 32);
+            lblLoaiChiTieu.TabIndex = 3;
+            lblLoaiChiTieu.Text = "Loại chi tiêu: ";
+            // 
+            // lblNgayGD
+            // 
+            lblNgayGD.AutoSize = true;
+            lblNgayGD.Font = new Font("Segoe UI", 12F);
+            lblNgayGD.Location = new Point(42, 297);
+            lblNgayGD.Name = "lblNgayGD";
+            lblNgayGD.Size = new Size(187, 32);
+            lblNgayGD.TabIndex = 4;
+            lblNgayGD.Text = "Ngày giao dịch: ";
+            // 
+            // lblGhiChu
+            // 
+            lblGhiChu.AutoSize = true;
+            lblGhiChu.Font = new Font("Segoe UI", 12F);
+            lblGhiChu.Location = new Point(42, 379);
+            lblGhiChu.Name = "lblGhiChu";
+            lblGhiChu.Size = new Size(108, 32);
+            lblGhiChu.TabIndex = 5;
+            lblGhiChu.Text = "Ghi chú: ";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 12F);
+            textBox1.Location = new Point(237, 379);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(492, 39);
+            textBox1.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 12F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(245, 83);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(484, 40);
+            comboBox1.TabIndex = 8;
+            comboBox1.Text = "Chi tiêu";
+            // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("Segoe UI", 12F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(245, 155);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(484, 40);
+            comboBox2.TabIndex = 9;
+            comboBox2.Text = "Tiền ăn sáng";
+            // 
+            // dateNgayGiaoDich
+            // 
+            dateNgayGiaoDich.Font = new Font("Segoe UI", 12F);
+            dateNgayGiaoDich.Format = DateTimePickerFormat.Short;
+            dateNgayGiaoDich.Location = new Point(245, 296);
+            dateNgayGiaoDich.Name = "dateNgayGiaoDich";
+            dateNgayGiaoDich.Size = new Size(484, 39);
+            dateNgayGiaoDich.TabIndex = 10;
+            // 
+            // btnThem
+            // 
+            btnThem.Location = new Point(850, 83);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(215, 61);
+            btnThem.TabIndex = 11;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            btnSua.Location = new Point(850, 171);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(215, 61);
+            btnSua.TabIndex = 12;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            btnXoa.Location = new Point(850, 353);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(215, 61);
+            btnXoa.TabIndex = 13;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            btnLuu.Location = new Point(850, 262);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(215, 61);
+            btnLuu.TabIndex = 14;
+            btnLuu.Text = "Lưu";
+            btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnThoat
+            // 
+            btnThoat.Location = new Point(850, 440);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(215, 61);
+            btnThoat.TabIndex = 15;
+            btnThoat.Text = "Thoát";
+            btnThoat.UseVisualStyleBackColor = true;
+            // 
+            // gridThuChiCaNhan
+            // 
+            gridThuChiCaNhan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridThuChiCaNhan.Location = new Point(54, 533);
+            gridThuChiCaNhan.Name = "gridThuChiCaNhan";
+            gridThuChiCaNhan.RowHeadersWidth = 62;
+            gridThuChiCaNhan.Size = new Size(1002, 337);
+            gridThuChiCaNhan.TabIndex = 16;
+            // 
+            // cboTenHM
+            // 
+            cboTenHM.Font = new Font("Segoe UI", 12F);
+            cboTenHM.FormattingEnabled = true;
+            cboTenHM.Location = new Point(245, 221);
+            cboTenHM.Name = "cboTenHM";
+            cboTenHM.Size = new Size(484, 40);
+            cboTenHM.TabIndex = 18;
+            cboTenHM.Text = "50.000";
+            // 
+            // lblGiaTien
+            // 
+            lblGiaTien.AutoSize = true;
+            lblGiaTien.Font = new Font("Segoe UI", 12F);
+            lblGiaTien.Location = new Point(48, 221);
+            lblGiaTien.Name = "lblGiaTien";
+            lblGiaTien.Size = new Size(108, 32);
+            lblGiaTien.TabIndex = 17;
+            lblGiaTien.Text = "Giá tiền: ";
+            // 
+            // FrmThuChiCaNhan
+            // 
+            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1168, 934);
+            Controls.Add(cboTenHM);
+            Controls.Add(lblGiaTien);
+            Controls.Add(gridThuChiCaNhan);
+            Controls.Add(btnThoat);
+            Controls.Add(btnLuu);
+            Controls.Add(btnXoa);
+            Controls.Add(btnSua);
+            Controls.Add(btnThem);
+            Controls.Add(dateNgayGiaoDich);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox1);
+            Controls.Add(lblGhiChu);
+            Controls.Add(lblNgayGD);
+            Controls.Add(lblLoaiChiTieu);
+            Controls.Add(lblLoaiGD);
+            Controls.Add(lblTieuDe);
+            Font = new Font("Segoe UI", 15F);
+            Margin = new Padding(5);
+            Name = "FrmThuChiCaNhan";
+            Text = "FrmThuChiCaNhan";
+            ((System.ComponentModel.ISupportInitialize)gridThuChiCaNhan).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblTieuDe;
+        private Label lblTenGD;
+        private Label lblLoaiGD;
+        private Label lblLoaiChiTieu;
+        private Label lblNgayGD;
+        private Label lblGhiChu;
+        private TextBox txtTenGD;
+        private TextBox textBox1;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private DateTimePicker dateNgayGiaoDich;
+        private Button btnThem;
+        private Button btnSua;
+        private Button btnXoa;
+        private Button btnLuu;
+        private Button btnThoat;
+        private DataGridView gridThuChiCaNhan;
+        private ComboBox cboTenHM;
+        private Label lblGiaTien;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Quan Ly Tai San/1.0.0": {
+        "runtime": {
+          "Quan Ly Tai San.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Quan Ly Tai San/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
