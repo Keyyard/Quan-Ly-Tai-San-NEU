@@ -81,6 +81,7 @@
             // 
             // txtTenDangNhap
             // 
+            txtTenDangNhap.Font = new Font("Segoe UI", 12F);
             txtTenDangNhap.Location = new Point(232, 75);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(419, 31);
@@ -88,6 +89,7 @@
             // 
             // txtEmail
             // 
+            txtEmail.Font = new Font("Segoe UI", 12F);
             txtEmail.Location = new Point(232, 135);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(419, 31);
@@ -96,6 +98,7 @@
             // 
             // txtMatKhau
             // 
+            txtMatKhau.Font = new Font("Segoe UI", 12F);
             txtMatKhau.Location = new Point(232, 200);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PasswordChar = '*';
@@ -107,7 +110,7 @@
             btnDangKy.Font = new Font("Segoe UI", 12F);
             btnDangKy.Location = new Point(123, 288);
             btnDangKy.Name = "btnDangKy";
-            btnDangKy.Size = new Size(179, 68);
+            btnDangKy.Size = new Size(160, 50);
             btnDangKy.TabIndex = 7;
             btnDangKy.Text = "Đăng ký";
             btnDangKy.UseVisualStyleBackColor = true;
@@ -117,7 +120,7 @@
             btnThoat.Font = new Font("Segoe UI", 12F);
             btnThoat.Location = new Point(472, 288);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(179, 68);
+            btnThoat.Size = new Size(160, 50);
             btnThoat.TabIndex = 8;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;

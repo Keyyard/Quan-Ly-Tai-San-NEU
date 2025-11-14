@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quan Ly Tai San")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1056ee1d50ae2749afa7acee2cd532aa7e645ad4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b89df1c8dc2675ce97b9a626b51baf62bc7e0036")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quan Ly Tai San")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quan Ly Tai San")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

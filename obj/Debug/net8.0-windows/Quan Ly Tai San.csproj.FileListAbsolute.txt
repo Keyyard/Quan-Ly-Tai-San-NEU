@@ -20,3 +20,25 @@ C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmBaoCaoThongKe.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmDangKy.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmHanMuc.resources
+D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.exe
+D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.deps.json
+D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.runtimeconfig.json
+D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.dll
+D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.pdb
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmBaoCaoThongKe.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmDangKy.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmHanMuc.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmLogin.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmMain.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmThuChiCaNhan.resources
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.csproj.GenerateResource.cache
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.AssemblyInfoInputs.cache
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.AssemblyInfo.cs
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.csproj.CoreCompileInputs.cache
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.sourcelink.json
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.dll
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\refint\Quan Ly Tai San.dll
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.pdb
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.genruntimeconfig.cache
+D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\ref\Quan Ly Tai San.dll

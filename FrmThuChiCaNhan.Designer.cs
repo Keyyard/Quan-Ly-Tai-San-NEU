@@ -138,45 +138,50 @@
             // 
             // btnThem
             // 
+            btnThem.Font = new Font("Segoe UI", 12F);
             btnThem.Location = new Point(850, 83);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(215, 61);
+            btnThem.Size = new Size(160, 50);
             btnThem.TabIndex = 11;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
             // 
             // btnSua
             // 
+            btnSua.Font = new Font("Segoe UI", 12F);
             btnSua.Location = new Point(850, 171);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(215, 61);
+            btnSua.Size = new Size(160, 50);
             btnSua.TabIndex = 12;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
+            btnXoa.Font = new Font("Segoe UI", 12F);
             btnXoa.Location = new Point(850, 353);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(215, 61);
+            btnXoa.Size = new Size(160, 50);
             btnXoa.TabIndex = 13;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
             // 
             // btnLuu
             // 
+            btnLuu.Font = new Font("Segoe UI", 12F);
             btnLuu.Location = new Point(850, 262);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(215, 61);
+            btnLuu.Size = new Size(160, 50);
             btnLuu.TabIndex = 14;
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;
             // 
             // btnThoat
             // 
+            btnThoat.Font = new Font("Segoe UI", 12F);
             btnThoat.Location = new Point(850, 440);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(215, 61);
+            btnThoat.Size = new Size(160, 50);
             btnThoat.TabIndex = 15;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
@@ -212,7 +217,7 @@
             // 
             // FrmThuChiCaNhan
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1168, 934);
             Controls.Add(cboTenHM);
@@ -232,8 +237,8 @@
             Controls.Add(lblLoaiChiTieu);
             Controls.Add(lblLoaiGD);
             Controls.Add(lblTieuDe);
-            Font = new Font("Segoe UI", 15F);
-            Margin = new Padding(5);
+            Font = new Font("Segoe UI", 12F);
+            Margin = new Padding(5, 6, 5, 6);
             Name = "FrmThuChiCaNhan";
             Text = "FrmThuChiCaNhan";
             ((System.ComponentModel.ISupportInitialize)gridThuChiCaNhan).EndInit();

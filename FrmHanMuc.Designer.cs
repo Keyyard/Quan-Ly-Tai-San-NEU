@@ -164,7 +164,7 @@
             btnTimKiem.Font = new Font("Segoe UI", 12F);
             btnTimKiem.Location = new Point(670, 74);
             btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Size = new Size(167, 53);
+            btnTimKiem.Size = new Size(160, 50);
             btnTimKiem.TabIndex = 17;
             btnTimKiem.Text = "Tìm kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             btnThoat.Font = new Font("Segoe UI", 12F);
             btnThoat.Location = new Point(670, 454);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(167, 53);
+            btnThoat.Size = new Size(160, 50);
             btnThoat.TabIndex = 15;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             btnThem.Font = new Font("Segoe UI", 12F);
             btnThem.Location = new Point(670, 148);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(167, 53);
+            btnThem.Size = new Size(160, 50);
             btnThem.TabIndex = 18;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
@@ -195,7 +195,7 @@
             btnSua.Font = new Font("Segoe UI", 12F);
             btnSua.Location = new Point(670, 222);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(167, 53);
+            btnSua.Size = new Size(160, 50);
             btnSua.TabIndex = 19;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = true;
@@ -205,7 +205,7 @@
             btnXoa.Font = new Font("Segoe UI", 12F);
             btnXoa.Location = new Point(670, 376);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(167, 53);
+            btnXoa.Size = new Size(160, 50);
             btnXoa.TabIndex = 20;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -215,7 +215,7 @@
             btnLuu.Font = new Font("Segoe UI", 12F);
             btnLuu.Location = new Point(670, 296);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(167, 53);
+            btnLuu.Size = new Size(160, 50);
             btnLuu.TabIndex = 21;
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;

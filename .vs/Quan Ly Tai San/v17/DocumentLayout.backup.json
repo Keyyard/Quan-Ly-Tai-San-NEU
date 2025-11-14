@@ -99,8 +99,7 @@
               "RelativeToolTip": "FrmHanMuc.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAlwBUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T01:04:16.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T01:04:16.878Z"
             },
             {
               "$type": "Document",
@@ -116,10 +115,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FrmHanMuc.Designer.cs",
@@ -131,6 +126,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T01:12:16.244Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",

@@ -41,7 +41,7 @@
             // lblTieuDe
             // 
             lblTieuDe.AutoSize = true;
-            lblTieuDe.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            lblTieuDe.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             lblTieuDe.Location = new Point(238, 9);
             lblTieuDe.Name = "lblTieuDe";
             lblTieuDe.Size = new Size(335, 67);
@@ -51,7 +51,7 @@
             // lblTenDN
             // 
             lblTenDN.AutoSize = true;
-            lblTenDN.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblTenDN.Font = new Font("Segoe UI", 12F);
             lblTenDN.Location = new Point(33, 110);
             lblTenDN.Name = "lblTenDN";
             lblTenDN.Size = new Size(197, 32);
@@ -61,7 +61,7 @@
             // lblMatKhau
             // 
             lblMatKhau.AutoSize = true;
-            lblMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblMatKhau.Font = new Font("Segoe UI", 12F);
             lblMatKhau.Location = new Point(33, 186);
             lblMatKhau.Name = "lblMatKhau";
             lblMatKhau.Size = new Size(135, 32);
@@ -87,20 +87,20 @@
             // 
             // btnDangNhap
             // 
-            btnDangNhap.Font = new Font("Segoe UI", 15F);
+            btnDangNhap.Font = new Font("Segoe UI", 12F);
             btnDangNhap.Location = new Point(53, 286);
             btnDangNhap.Name = "btnDangNhap";
-            btnDangNhap.Size = new Size(199, 79);
+            btnDangNhap.Size = new Size(160, 50);
             btnDangNhap.TabIndex = 6;
             btnDangNhap.Text = "Đăng nhập";
             btnDangNhap.UseVisualStyleBackColor = true;
             // 
             // btnThoat
             // 
-            btnThoat.Font = new Font("Segoe UI", 15F);
+            btnThoat.Font = new Font("Segoe UI", 12F);
             btnThoat.Location = new Point(550, 286);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(199, 79);
+            btnThoat.Size = new Size(160, 50);
             btnThoat.TabIndex = 7;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // 
             // btnDangKy
             // 
-            btnDangKy.Font = new Font("Segoe UI", 15F);
+            btnDangKy.Font = new Font("Segoe UI", 12F);
             btnDangKy.Location = new Point(298, 286);
             btnDangKy.Name = "btnDangKy";
-            btnDangKy.Size = new Size(199, 79);
+            btnDangKy.Size = new Size(160, 50);
             btnDangKy.TabIndex = 8;
             btnDangKy.Text = "Đăng ký";
             btnDangKy.UseVisualStyleBackColor = true;
