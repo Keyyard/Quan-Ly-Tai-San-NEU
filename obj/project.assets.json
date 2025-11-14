@@ -8,19 +8,24 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\keyya\\.nuget\\packages\\": {}
+    "C:\\Users\\ntduo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\Quan Ly Tai San.csproj",
+      "projectUniqueName": "C:\\Users\\ntduo\\Source\\Repos\\Quan-Ly-Tai-San-NEU\\Quan Ly Tai San.csproj",
       "projectName": "Quan Ly Tai San",
-      "projectPath": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\Quan Ly Tai San.csproj",
-      "packagesPath": "C:\\Users\\keyya\\.nuget\\packages\\",
-      "outputPath": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\obj\\",
+      "projectPath": "C:\\Users\\ntduo\\Source\\Repos\\Quan-Ly-Tai-San-NEU\\Quan Ly Tai San.csproj",
+      "packagesPath": "C:\\Users\\ntduo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ntduo\\Source\\Repos\\Quan-Ly-Tai-San-NEU\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\keyya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ntduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

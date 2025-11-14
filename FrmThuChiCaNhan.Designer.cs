@@ -33,9 +33,8 @@
             lblLoaiChiTieu = new Label();
             lblNgayGD = new Label();
             lblGhiChu = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            cboLoaiGiaoDich = new ComboBox();
+            cboLoaiCTTK = new ComboBox();
             dateNgayGiaoDich = new DateTimePicker();
             btnThem = new Button();
             btnSua = new Button();
@@ -43,8 +42,9 @@
             btnLuu = new Button();
             btnThoat = new Button();
             gridThuChiCaNhan = new DataGridView();
-            cboTenHM = new ComboBox();
             lblGiaTien = new Label();
+            txtGhiChu = new RichTextBox();
+            txtGiaTien = new TextBox();
             ((System.ComponentModel.ISupportInitialize)gridThuChiCaNhan).BeginInit();
             SuspendLayout();
             // 
@@ -75,9 +75,9 @@
             lblLoaiChiTieu.Font = new Font("Segoe UI", 12F);
             lblLoaiChiTieu.Location = new Point(48, 155);
             lblLoaiChiTieu.Name = "lblLoaiChiTieu";
-            lblLoaiChiTieu.Size = new Size(155, 32);
+            lblLoaiChiTieu.Size = new Size(270, 32);
             lblLoaiChiTieu.TabIndex = 3;
-            lblLoaiChiTieu.Text = "Loại chi tiêu: ";
+            lblLoaiChiTieu.Text = "Loại chi tiêu/ Tiết kiệm: ";
             // 
             // lblNgayGD
             // 
@@ -99,39 +99,31 @@
             lblGhiChu.TabIndex = 5;
             lblGhiChu.Text = "Ghi chú: ";
             // 
-            // textBox1
+            // cboLoaiGiaoDich
             // 
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(237, 379);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(492, 39);
-            textBox1.TabIndex = 7;
+            cboLoaiGiaoDich.Font = new Font("Segoe UI", 12F);
+            cboLoaiGiaoDich.FormattingEnabled = true;
+            cboLoaiGiaoDich.Location = new Point(311, 83);
+            cboLoaiGiaoDich.Name = "cboLoaiGiaoDich";
+            cboLoaiGiaoDich.Size = new Size(484, 40);
+            cboLoaiGiaoDich.TabIndex = 8;
+            cboLoaiGiaoDich.Text = "Chi tiêu";
             // 
-            // comboBox1
+            // cboLoaiCTTK
             // 
-            comboBox1.Font = new Font("Segoe UI", 12F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(245, 83);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(484, 40);
-            comboBox1.TabIndex = 8;
-            comboBox1.Text = "Chi tiêu";
-            // 
-            // comboBox2
-            // 
-            comboBox2.Font = new Font("Segoe UI", 12F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(245, 155);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(484, 40);
-            comboBox2.TabIndex = 9;
-            comboBox2.Text = "Tiền ăn sáng";
+            cboLoaiCTTK.Font = new Font("Segoe UI", 12F);
+            cboLoaiCTTK.FormattingEnabled = true;
+            cboLoaiCTTK.Location = new Point(311, 155);
+            cboLoaiCTTK.Name = "cboLoaiCTTK";
+            cboLoaiCTTK.Size = new Size(484, 40);
+            cboLoaiCTTK.TabIndex = 9;
+            cboLoaiCTTK.Text = "Tiền ăn sáng";
             // 
             // dateNgayGiaoDich
             // 
             dateNgayGiaoDich.Font = new Font("Segoe UI", 12F);
             dateNgayGiaoDich.Format = DateTimePickerFormat.Short;
-            dateNgayGiaoDich.Location = new Point(245, 296);
+            dateNgayGiaoDich.Location = new Point(311, 297);
             dateNgayGiaoDich.Name = "dateNgayGiaoDich";
             dateNgayGiaoDich.Size = new Size(484, 39);
             dateNgayGiaoDich.TabIndex = 10;
@@ -189,21 +181,11 @@
             // gridThuChiCaNhan
             // 
             gridThuChiCaNhan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridThuChiCaNhan.Location = new Point(54, 533);
+            gridThuChiCaNhan.Location = new Point(48, 556);
             gridThuChiCaNhan.Name = "gridThuChiCaNhan";
             gridThuChiCaNhan.RowHeadersWidth = 62;
-            gridThuChiCaNhan.Size = new Size(1002, 337);
+            gridThuChiCaNhan.Size = new Size(962, 337);
             gridThuChiCaNhan.TabIndex = 16;
-            // 
-            // cboTenHM
-            // 
-            cboTenHM.Font = new Font("Segoe UI", 12F);
-            cboTenHM.FormattingEnabled = true;
-            cboTenHM.Location = new Point(245, 221);
-            cboTenHM.Name = "cboTenHM";
-            cboTenHM.Size = new Size(484, 40);
-            cboTenHM.TabIndex = 18;
-            cboTenHM.Text = "50.000";
             // 
             // lblGiaTien
             // 
@@ -215,12 +197,28 @@
             lblGiaTien.TabIndex = 17;
             lblGiaTien.Text = "Giá tiền: ";
             // 
+            // txtGhiChu
+            // 
+            txtGhiChu.Location = new Point(311, 376);
+            txtGhiChu.Name = "txtGhiChu";
+            txtGhiChu.Size = new Size(484, 144);
+            txtGhiChu.TabIndex = 19;
+            txtGhiChu.Text = "";
+            // 
+            // txtGiaTien
+            // 
+            txtGiaTien.Location = new Point(310, 225);
+            txtGiaTien.Name = "txtGiaTien";
+            txtGiaTien.Size = new Size(485, 39);
+            txtGiaTien.TabIndex = 20;
+            // 
             // FrmThuChiCaNhan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1168, 934);
-            Controls.Add(cboTenHM);
+            ClientSize = new Size(1077, 934);
+            Controls.Add(txtGiaTien);
+            Controls.Add(txtGhiChu);
             Controls.Add(lblGiaTien);
             Controls.Add(gridThuChiCaNhan);
             Controls.Add(btnThoat);
@@ -229,9 +227,8 @@
             Controls.Add(btnSua);
             Controls.Add(btnThem);
             Controls.Add(dateNgayGiaoDich);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(cboLoaiCTTK);
+            Controls.Add(cboLoaiGiaoDich);
             Controls.Add(lblGhiChu);
             Controls.Add(lblNgayGD);
             Controls.Add(lblLoaiChiTieu);
@@ -255,9 +252,8 @@
         private Label lblNgayGD;
         private Label lblGhiChu;
         private TextBox txtTenGD;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cboLoaiGiaoDich;
+        private ComboBox cboLoaiCTTK;
         private DateTimePicker dateNgayGiaoDich;
         private Button btnThem;
         private Button btnSua;
@@ -265,7 +261,8 @@
         private Button btnLuu;
         private Button btnThoat;
         private DataGridView gridThuChiCaNhan;
-        private ComboBox cboTenHM;
         private Label lblGiaTien;
+        private RichTextBox txtGhiChu;
+        private TextBox txtGiaTien;
     }
 }

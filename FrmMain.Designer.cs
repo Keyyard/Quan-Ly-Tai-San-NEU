@@ -82,7 +82,6 @@
             statusStrip = new StatusStrip();
             toolStripStatusLabel = new ToolStripStatusLabel();
             toolTip = new ToolTip(components);
-            lbl = new Label();
             menuStrip.SuspendLayout();
             toolStrip.SuspendLayout();
             statusStrip.SuspendLayout();
@@ -485,21 +484,11 @@
             toolStripStatusLabel.Size = new Size(60, 25);
             toolStripStatusLabel.Text = "Status";
             // 
-            // lbl
-            // 
-            lbl.AutoSize = true;
-            lbl.Location = new Point(40, 114);
-            lbl.Name = "lbl";
-            lbl.Size = new Size(59, 25);
-            lbl.TabIndex = 4;
-            lbl.Text = "label1";
-            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 871);
-            Controls.Add(lbl);
             Controls.Add(statusStrip);
             Controls.Add(toolStrip);
             Controls.Add(menuStrip);
@@ -573,7 +562,6 @@
         private System.Windows.Forms.ToolStripButton printPreviewToolStripButton;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.ToolTip toolTip;
-        private Label lbl;
     }
 }
 

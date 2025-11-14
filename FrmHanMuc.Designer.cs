@@ -35,18 +35,18 @@
             lblHMConLai = new Label();
             lblTinhTrang = new Label();
             txtHMConLai = new TextBox();
-            txtTinhTrang = new TextBox();
             txtGiaTriHM = new TextBox();
             txtTongChi = new TextBox();
             cboTenHM = new ComboBox();
-            dataGridView1 = new DataGridView();
+            dataHanMuc = new DataGridView();
             btnTimKiem = new Button();
             btnThoat = new Button();
             btnThem = new Button();
             btnSua = new Button();
             btnXoa = new Button();
             btnLuu = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txtTinhTrang = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataHanMuc).BeginInit();
             SuspendLayout();
             // 
             // lblTieude
@@ -117,14 +117,6 @@
             txtHMConLai.Size = new Size(332, 39);
             txtHMConLai.TabIndex = 6;
             // 
-            // txtTinhTrang
-            // 
-            txtTinhTrang.Font = new Font("Segoe UI", 12F);
-            txtTinhTrang.Location = new Point(236, 344);
-            txtTinhTrang.Name = "txtTinhTrang";
-            txtTinhTrang.Size = new Size(332, 39);
-            txtTinhTrang.TabIndex = 7;
-            // 
             // txtGiaTriHM
             // 
             txtGiaTriHM.Font = new Font("Segoe UI", 12F);
@@ -150,14 +142,14 @@
             cboTenHM.Size = new Size(331, 40);
             cboTenHM.TabIndex = 10;
             // 
-            // dataGridView1
+            // dataHanMuc
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(44, 533);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(793, 301);
-            dataGridView1.TabIndex = 16;
+            dataHanMuc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataHanMuc.Location = new Point(44, 533);
+            dataHanMuc.Name = "dataHanMuc";
+            dataHanMuc.RowHeadersWidth = 62;
+            dataHanMuc.Size = new Size(793, 301);
+            dataHanMuc.TabIndex = 16;
             // 
             // btnTimKiem
             // 
@@ -220,6 +212,14 @@
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;
             // 
+            // txtTinhTrang
+            // 
+            txtTinhTrang.Font = new Font("Segoe UI", 12F);
+            txtTinhTrang.Location = new Point(236, 344);
+            txtTinhTrang.Name = "txtTinhTrang";
+            txtTinhTrang.Size = new Size(332, 39);
+            txtTinhTrang.TabIndex = 7;
+            // 
             // FrmHanMuc
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -230,7 +230,7 @@
             Controls.Add(btnSua);
             Controls.Add(btnThem);
             Controls.Add(btnTimKiem);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataHanMuc);
             Controls.Add(btnThoat);
             Controls.Add(cboTenHM);
             Controls.Add(txtTongChi);
@@ -245,7 +245,7 @@
             Controls.Add(lblTieude);
             Name = "FrmHanMuc";
             Text = "FrmHanMuc";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataHanMuc).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,16 +259,16 @@
         private Label lblHMConLai;
         private Label lblTinhTrang;
         private TextBox txtHMConLai;
-        private TextBox txtTinhTrang;
         private TextBox txtGiaTriHM;
         private TextBox txtTongChi;
         private ComboBox cboTenHM;
-        private DataGridView dataGridView1;
+        private DataGridView dataHanMuc;
         private Button btnTimKiem;
         private Button btnThoat;
         private Button btnThem;
         private Button btnSua;
         private Button btnXoa;
         private Button btnLuu;
+        private TextBox txtTinhTrang;
     }
 }
