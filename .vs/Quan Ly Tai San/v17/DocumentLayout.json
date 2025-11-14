@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\frmtietkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmtietkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmthuchicanhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmthuchicanhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8D6C53E-3B58-4D31-83A4-010AF34E1267}|Quan Ly Tai San.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,21 +22,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T19:05:03.096Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -63,66 +50,27 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmCategories.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmCategories.cs",
+              "RelativeDocumentMoniker": "FrmCategories.cs",
+              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmCategories.cs [Design]",
+              "RelativeToolTip": "FrmCategories.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:39:43.668Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmMain.cs",
               "RelativeDocumentMoniker": "FrmMain.cs",
               "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmMain.cs [Design]",
               "RelativeToolTip": "FrmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T10:23:08.79Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmTietKiem.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmTietKiem.cs",
-              "RelativeDocumentMoniker": "FrmTietKiem.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmTietKiem.cs [Design]",
-              "RelativeToolTip": "FrmTietKiem.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T03:56:41.684Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmThuChiCaNhan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmThuChiCaNhan.cs",
-              "RelativeDocumentMoniker": "FrmThuChiCaNhan.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmThuChiCaNhan.cs [Design]",
-              "RelativeToolTip": "FrmThuChiCaNhan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T10:24:30.088Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "FrmLogin.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmLogin.cs [Design]",
-              "RelativeToolTip": "FrmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T01:11:51.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmBaoCaoThongKe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs",
-              "RelativeDocumentMoniker": "FrmBaoCaoThongKe.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs [Design]",
-              "RelativeToolTip": "FrmBaoCaoThongKe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T10:44:01.197Z"
+              "WhenOpened": "2025-11-14T16:09:13.765Z"
             }
           ]
         }

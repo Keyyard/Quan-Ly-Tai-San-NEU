@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_Tai_San
 {
-    public partial class FrmTietKiem : Form
+    public partial class FrmSavings : Form
     {
-        public FrmTietKiem()
+        public FrmSavings()
         {
             InitializeComponent();
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); 
         }
     }
 }

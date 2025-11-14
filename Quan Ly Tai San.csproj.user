@@ -4,22 +4,28 @@
     <Compile Update="FrmBaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmDangKy.cs">
+    <Compile Update="FrmCategories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmHanMuc.cs">
+    <Compile Update="FrmSavings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmLogin.cs">
+    <Compile Update="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmSpendingLimits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmThuChiCaNhan.cs">
+    <Compile Update="FrmTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmTietKiem.cs">
+    <Compile Update="FrmTransactionHistory.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

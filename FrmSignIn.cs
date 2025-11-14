@@ -1,15 +1,15 @@
 namespace Quan_Ly_Tai_San
 {
-    public partial class FrmLogin : Form
+    public partial class FrmSignIn : Form
     {
-        public FrmLogin()
+        public FrmSignIn()
         {
             InitializeComponent();
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            FrmDangKy flop = new FrmDangKy();
+            FrmSignUp flop = new FrmSignUp();
             flop.Show();
         }
 

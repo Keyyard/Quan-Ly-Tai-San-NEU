@@ -82,9 +82,13 @@
             statusStrip = new StatusStrip();
             toolStripStatusLabel = new ToolStripStatusLabel();
             toolTip = new ToolTip(components);
+            tabControl = new TabControl();
+            tabPage = new TabPage();
+            tabPage2 = new TabPage();
             menuStrip.SuspendLayout();
             toolStrip.SuspendLayout();
             statusStrip.SuspendLayout();
+            tabControl.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip
@@ -484,11 +488,42 @@
             toolStripStatusLabel.Size = new Size(60, 25);
             toolStripStatusLabel.Text = "Status";
             // 
+            // tabControl
+            // 
+            tabControl.Controls.Add(tabPage);
+            tabControl.Controls.Add(tabPage2);
+            tabControl.Location = new Point(5, 73);
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(1048, 421);
+            tabControl.TabIndex = 4;
+            // 
+            // tabPage
+            // 
+            tabPage.Location = new Point(4, 34);
+            tabPage.Name = "tabPage";
+            tabPage.Padding = new Padding(3);
+            tabPage.Size = new Size(1040, 383);
+            tabPage.TabIndex = 0;
+            tabPage.Text = "tabPage1";
+            tabPage.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 34);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1040, 383);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 871);
+            Controls.Add(tabControl);
             Controls.Add(statusStrip);
             Controls.Add(toolStrip);
             Controls.Add(menuStrip);
@@ -503,6 +538,7 @@
             toolStrip.PerformLayout();
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
+            tabControl.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
 
@@ -562,6 +598,9 @@
         private System.Windows.Forms.ToolStripButton printPreviewToolStripButton;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.ToolTip toolTip;
+        private TabControl tabControl;
+        private TabPage tabPage;
+        private TabPage tabPage2;
     }
 }
 

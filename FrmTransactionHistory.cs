@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_Tai_San
 {
-    public partial class FrmThuChiCaNhan : Form
+    public partial class FrmTransactionHistory : Form
     {
-        public FrmThuChiCaNhan()
+        public FrmTransactionHistory()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

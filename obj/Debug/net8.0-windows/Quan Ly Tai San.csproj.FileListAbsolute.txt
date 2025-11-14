@@ -3,7 +3,6 @@ C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\Quan Ly
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\Quan Ly Tai San.runtimeconfig.json
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\Quan Ly Tai San.dll
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\Quan Ly Tai San.pdb
-C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmLogin.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmMain.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan Ly Tai San.csproj.GenerateResource.cache
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan Ly Tai San.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,7 +17,6 @@ C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan Ly
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\ref\Quan Ly Tai San.dll
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmThuChiCaNhan.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmBaoCaoThongKe.resources
-C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmDangKy.resources
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmHanMuc.resources
 D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.exe
 D:\NEU\.net\exam\Quan Ly Tai San\bin\Debug\net8.0-windows\Quan Ly Tai San.deps.json
@@ -42,3 +40,6 @@ D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\refint\Quan Ly Tai San
 D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.pdb
 D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\Quan Ly Tai San.genruntimeconfig.cache
 D:\NEU\.net\exam\Quan Ly Tai San\obj\Debug\net8.0-windows\ref\Quan Ly Tai San.dll
+C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmTietKiem.resources
+C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmSignIn.resources
+C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\Quan_Ly_Tai_San.FrmSignUp.resources

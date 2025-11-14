@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_Tai_San
 {
-    public partial class FrmHanMuc : Form
+    public partial class FrmSignUp : Form
     {
-        public FrmHanMuc()
+        public FrmSignUp()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_Tai_San
 {
-    public partial class FrmDangKy : Form
+    public partial class FrmSpendingLimits : Form
     {
-        public FrmDangKy()
+        public FrmSpendingLimits()
         {
             InitializeComponent();
         }
