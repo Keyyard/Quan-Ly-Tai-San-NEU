@@ -37,6 +37,7 @@
             btnSearch = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
+            btnDeposit = new Button();
             btnBack = new Button();
             ((System.ComponentModel.ISupportInitialize)dataSavings).BeginInit();
             SuspendLayout();
@@ -79,6 +80,7 @@
             dataSavings.RowHeadersWidth = 62;
             dataSavings.Size = new Size(490, 225);
             dataSavings.TabIndex = 3;
+            dataSavings.SelectionChanged += dataSavings_SelectionChanged;
             // 
             // txtName
             // 
@@ -126,10 +128,21 @@
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             // 
+            // btnDeposit
+            // 
+            btnDeposit.Font = new Font("Segoe UI", 12F);
+            btnDeposit.Location = new Point(589, 252);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(162, 54);
+            btnDeposit.TabIndex = 10;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            btnDeposit.Click += btnDeposit_Click;
+            // 
             // btnBack
             // 
             btnBack.Font = new Font("Segoe UI", 12F);
-            btnBack.Location = new Point(589, 340);
+            btnBack.Location = new Point(589, 320);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(162, 54);
             btnBack.TabIndex = 9;
@@ -143,6 +156,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBack);
+            Controls.Add(btnDeposit);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnSearch);
@@ -153,7 +167,7 @@
             Controls.Add(lblName);
             Controls.Add(lblSavings);
             Name = "FrmSavings";
-            Text = "FrmSavings";
+            Text = "Manage Savings";
             ((System.ComponentModel.ISupportInitialize)dataSavings).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -170,6 +184,7 @@
         private Button btnSearch;
         private Button btnEdit;
         private Button btnDelete;
+        private Button btnDeposit;
         private Button btnBack;
     }
 }

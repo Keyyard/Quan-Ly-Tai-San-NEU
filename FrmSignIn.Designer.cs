@@ -94,6 +94,7 @@
             btnSignIn.TabIndex = 6;
             btnSignIn.Text = "Sign In";
             btnSignIn.UseVisualStyleBackColor = true;
+            btnSignIn.Click += btnSignIn_Click;
             // 
             // btnCancel
             // 
@@ -104,7 +105,7 @@
             btnCancel.TabIndex = 7;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnThoat_Click;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSignUp
             // 
@@ -115,7 +116,7 @@
             btnSignUp.TabIndex = 8;
             btnSignUp.Text = "Sign Up";
             btnSignUp.UseVisualStyleBackColor = true;
-            btnSignUp.Click += btnDangKy_Click;
+            btnSignUp.Click += btnSignUp_Click;
             // 
             // FrmSignIn
             // 
@@ -131,7 +132,7 @@
             Controls.Add(lblUsername);
             Controls.Add(lblSignIn);
             Name = "FrmSignIn";
-            Text = "Form1";
+            Text = "Sign In";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -39,6 +39,7 @@
             btnDelete = new Button();
             btnAdd = new Button();
             btnBack = new Button();
+            btnRefresh = new Button();
             dataCategories = new DataGridView();
             txtLimit = new TextBox();
             lblLimit = new Label();
@@ -53,7 +54,7 @@
             lblCategories.Name = "lblCategories";
             lblCategories.Size = new Size(168, 41);
             lblCategories.TabIndex = 0;
-            lblCategories.Text = "Categories";
+            lblCategories.Text = "Expense Categories";
             // 
             // lblType
             // 
@@ -149,6 +150,18 @@
             btnBack.TabIndex = 10;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Font = new Font("Segoe UI", 12F);
+            btnRefresh.Location = new Point(619, 390);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(169, 55);
+            btnRefresh.TabIndex = 15;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // dataCategories
             // 
@@ -185,6 +198,7 @@
             Controls.Add(txtLimit);
             Controls.Add(lblLimit);
             Controls.Add(dataCategories);
+            Controls.Add(btnRefresh);
             Controls.Add(btnBack);
             Controls.Add(btnAdd);
             Controls.Add(btnDelete);
@@ -197,7 +211,7 @@
             Controls.Add(lblType);
             Controls.Add(lblCategories);
             Name = "FrmCategories";
-            Text = "FrmCategories";
+            Text = "Manage Categories";
             ((System.ComponentModel.ISupportInitialize)dataCategories).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -216,6 +230,7 @@
         private Button btnDelete;
         private Button btnAdd;
         private Button btnBack;
+        private Button btnRefresh;
         private DataGridView dataCategories;
         private TextBox txtLimit;
         private Label lblLimit;

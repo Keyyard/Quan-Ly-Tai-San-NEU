@@ -1,4 +1,6 @@
-namespace Quan_Ly_Tai_San
+using Quan_Ly_Tai_San;
+
+namespace FinanceTrackerNEU
 {
     internal static class Program
     {

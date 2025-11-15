@@ -30,10 +30,8 @@
         {
             lblSignUp = new Label();
             lblUsername = new Label();
-            lblEmail = new Label();
             lblPassword = new Label();
             txtUsername = new TextBox();
-            txtEmail = new TextBox();
             txtPassword = new TextBox();
             btnSignUp = new Button();
             btnCancel = new Button();
@@ -47,7 +45,7 @@
             lblSignUp.Name = "lblSignUp";
             lblSignUp.Size = new Size(324, 41);
             lblSignUp.TabIndex = 0;
-            lblSignUp.Text = "ĐĂNG KÝ TÀI KHOẢN";
+            lblSignUp.Text = "Sign Up";
             // 
             // lblUsername
             // 
@@ -59,24 +57,14 @@
             lblUsername.TabIndex = 1;
             lblUsername.Text = "Username: ";
             // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.Font = new Font("Segoe UI", 12F);
-            lblEmail.Location = new Point(65, 135);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(83, 32);
-            lblEmail.TabIndex = 2;
-            lblEmail.Text = "Email: ";
-            // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Segoe UI", 12F);
-            lblPassword.Location = new Point(65, 200);
+            lblPassword.Location = new Point(65, 135);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(123, 32);
-            lblPassword.TabIndex = 3;
+            lblPassword.TabIndex = 2;
             lblPassword.Text = "Password: ";
             // 
             // txtUsername
@@ -85,46 +73,38 @@
             txtUsername.Location = new Point(232, 75);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(419, 39);
-            txtUsername.TabIndex = 4;
-            // 
-            // txtEmail
-            // 
-            txtEmail.Font = new Font("Segoe UI", 12F);
-            txtEmail.Location = new Point(232, 135);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(419, 39);
-            txtEmail.TabIndex = 5;
-            txtEmail.Text = "nguyenvana@gmail.com";
+            txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F);
-            txtPassword.Location = new Point(232, 200);
+            txtPassword.Location = new Point(232, 135);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(419, 39);
-            txtPassword.TabIndex = 6;
+            txtPassword.TabIndex = 4;
             // 
             // btnSignUp
             // 
             btnSignUp.Font = new Font("Segoe UI", 12F);
-            btnSignUp.Location = new Point(123, 288);
+            btnSignUp.Location = new Point(123, 200);
             btnSignUp.Name = "btnSignUp";
             btnSignUp.Size = new Size(160, 50);
-            btnSignUp.TabIndex = 7;
+            btnSignUp.TabIndex = 5;
             btnSignUp.Text = "Sign Up";
             btnSignUp.UseVisualStyleBackColor = true;
+            btnSignUp.Click += btnSignUp_Click;
             // 
             // btnCancel
             // 
             btnCancel.Font = new Font("Segoe UI", 12F);
-            btnCancel.Location = new Point(472, 288);
+            btnCancel.Location = new Point(472, 200);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(160, 50);
-            btnCancel.TabIndex = 8;
+            btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnThoat_Click;
+            btnCancel.Click += btnCancel_Click;
             // 
             // FrmSignUp
             // 
@@ -134,14 +114,12 @@
             Controls.Add(btnCancel);
             Controls.Add(btnSignUp);
             Controls.Add(txtPassword);
-            Controls.Add(txtEmail);
             Controls.Add(txtUsername);
             Controls.Add(lblPassword);
-            Controls.Add(lblEmail);
             Controls.Add(lblUsername);
             Controls.Add(lblSignUp);
             Name = "FrmSignUp";
-            Text = "FrmDangKy";
+            Text = "Sign Up";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -150,10 +128,8 @@
 
         private Label lblSignUp;
         private Label lblUsername;
-        private Label lblEmail;
         private Label lblPassword;
         private TextBox txtUsername;
-        private TextBox txtEmail;
         private TextBox txtPassword;
         private Button btnSignUp;
         private Button btnCancel;

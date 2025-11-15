@@ -3,102 +3,113 @@ plans - live: https://keyyard.notion.site/net-prj-2ab7520f92e48041bdc6cff193afa1
 
 ## Database
 
-Transactions (Income/Expense/Saving) - balance & detail
+The app uses a local SQL Server database with the following tables:
 
-Categories - Each type of Transaction has their own types. Savings will have input as name of saving instead of type and can be select later as well.
-
-Users can set the amount they goal to spend a category, and alert if spent over category.
-
-```
+```sql
 users {
-userId
+userId (PK)
 username
 password
 currentBalance
 }
 
-categories {
-categoryId
-userId
-type Income/Expense/Saving
-name
-description
-goalAmount?
-budget? if expense
-currentAmount? 
+IncomeCategories {
+CategoryId (PK)
+UserId (FK)
+Name
+Description
+}
+
+ExpenseCategories {
+CategoryId (PK)
+UserId (FK)
+Name
+Description
+Budget (decimal)
+CurrentSpent (decimal)
+}
+
+SavingsGoals {
+GoalId (PK)
+UserId (FK)
+Name
+GoalAmount (decimal)
+CurrentAmount (decimal)
+Description
 }
 
 transactions {
-transactionId
-userId
-type Income/Expense/Saving
-cateogoryId
-amount
-date
+transactionId (PK)
+userId (FK)
+type (Income/Expense/Saving)
+categoryId (FK to IncomeCategories or ExpenseCategories or SavingsGoals based on type)
+amount (decimal)
+date (datetime)
 description
 }
-```
+```- Categories are separated into IncomeCategories and ExpenseCategories for better control.
+- ExpenseCategories include Budget and CurrentSpent for tracking spending limits.
+- SavingsGoals manage savings targets with current progress.
+- Transactions reference the appropriate category table based on type.
 
 ## Forms
 
-1. Login
-2. Register
-3. Dashboard:
-    
-    Current Balance: {number}
-    
-    Menus:
-    
-    [Transaction Form]
-    
-    [Transaction History]
-    
-    [Savings]
-    
-    [Categories CRUD]
-    
-4. Transaction Form
-    
-    Type [Combo Box]
-    
-    Category/Name(if savings): Combo Box.
-    
-    Balance: Input number
-    
-    Date: date
-    
-    Description: input text
-    
-    [Add]
-    
-5. Transaction History
-    
-    Can search depends on Transaction Type. {input}
-    
-    Read | Edit/Update | Delete
-    
-    {DataGridView shows all transactions}
-    
-6. Savings
-    - Create Savings (Category in type Saving):
-    
-    Name (category name): input
-    
-    Goal (goal? in category): input
-    
-    READ | EDIT | DELETE
-    
-    Display all names (category) savings with their stats via DataGridView.
-    
-7. Categories
-    - Create Categories:
-    
-    Type: type of Income/Expense Combo Box
+1. **Sign In (FrmSignIn)**: Login form for existing users.
 
-    if Expense -> budget: input
-    
-    Name: input text
-    
-    Description?: input text
-    
-    {GridDataView}
+2. **Sign Up (FrmSignUp)**: Registration form for new users.
+
+3. **Dashboard (FrmDashboard)**:
+   - Displays current balance.
+   - Menus to navigate to other forms:
+     - Add Income
+     - Add Expense
+     - Transaction History
+     - Savings Management
+     - Expense Categories Management
+     - Income Categories Management
+     - Reports
+
+4. **Add Income (FrmIncome)**:
+   - Select Income Category from IncomeCategories.
+   - Amount: Input number
+   - Date: Date picker
+   - Description: Input text
+   - [Add] button to insert transaction and update balance.
+
+5. **Add Expense (FrmExpense)**:
+   - Select Expense Category from ExpenseCategories.
+   - Amount: Input number
+   - Date: Date picker
+   - Description: Input text
+   - Displays remaining budget for selected category.
+   - [Add] button to insert transaction, update balance, and increment CurrentSpent.
+
+6. **Transaction History (FrmTransactionHistory)**:
+   - Filter by transaction type (Income/Expense/Saving).
+   - DataGridView showing all transactions with category names.
+   - Edit/Update and Delete functionality for transactions.
+   - Updates category CurrentSpent or SavingsGoals CurrentAmount on edit/delete.
+
+7. **Savings Management (FrmSavings)**:
+   - Full CRUD for SavingsGoals: Create, Read, Edit, Delete.
+   - Fields: Name, GoalAmount, CurrentAmount, Description.
+   - [Deposit] button to add money to a selected goal, inserting a transaction and updating CurrentAmount.
+
+8. **Expense Categories Management (FrmCategories)**:
+   - CRUD for ExpenseCategories.
+   - Fields: Name, Description, Budget (spending limit).
+   - DataGridView for listing and managing categories.
+
+9. **Income Categories Management (FrmIncomeCategories)**:
+   - CRUD for IncomeCategories.
+   - Fields: Name, Description.
+   - DataGridView for listing and managing categories.
+
+9. **Income Categories Management (FrmIncomeCategories)**:
+   - CRUD for IncomeCategories.
+   - Fields: Name, Description.
+   - DataGridView for listing and managing categories.
+
+10. **Reports (FrmBaoCaoThongKe)**:
+   - Displays total Income, Expense, Savings by month/year.
+   - Simple sum queries grouped by type and date.

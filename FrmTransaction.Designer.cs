@@ -42,6 +42,9 @@
             lblBalance = new Label();
             txtDescription = new RichTextBox();
             txtBalance = new TextBox();
+            lblBudget = new Label();
+            progressBar1 = new ProgressBar();
+            lblProgress = new Label();
             ((System.ComponentModel.ISupportInitialize)gridTransaction).BeginInit();
             SuspendLayout();
             // 
@@ -105,6 +108,7 @@
             cboType.Size = new Size(484, 40);
             cboType.TabIndex = 8;
             cboType.Text = "Chi tiêu";
+            cboType.SelectedIndexChanged += cboType_SelectedIndexChanged;
             // 
             // cboCategory
             // 
@@ -115,6 +119,7 @@
             cboCategory.Size = new Size(484, 40);
             cboCategory.TabIndex = 9;
             cboCategory.Text = "Tiền ăn sáng";
+            cboCategory.SelectedIndexChanged += cboCategory_SelectedIndexChanged;
             // 
             // date
             // 
@@ -165,20 +170,62 @@
             lblBalance.TabIndex = 17;
             lblBalance.Text = "Balance";
             // 
-            // txtDescription
-            // 
-            txtDescription.Location = new Point(203, 376);
-            txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(735, 144);
-            txtDescription.TabIndex = 19;
-            txtDescription.Text = "";
-            // 
             // txtBalance
             // 
-            txtBalance.Location = new Point(202, 225);
+            txtBalance.Font = new Font("Segoe UI", 12F);
+            txtBalance.Location = new Point(203, 221);
             txtBalance.Name = "txtBalance";
-            txtBalance.Size = new Size(485, 39);
-            txtBalance.TabIndex = 20;
+            txtBalance.ReadOnly = true;
+            txtBalance.Size = new Size(484, 39);
+            txtBalance.TabIndex = 21;
+            // 
+            // txtDescription
+            // 
+            txtDescription.Font = new Font("Segoe UI", 12F);
+            txtDescription.Location = new Point(203, 379);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(484, 100);
+            txtDescription.TabIndex = 22;
+            // 
+            // lblBudget
+            // 
+            lblBudget.Font = new Font("Segoe UI", 12F);
+            lblBudget.Location = new Point(48, 270);
+            lblBudget.Name = "lblBudget";
+            lblBudget.Size = new Size(100, 32);
+            lblBudget.TabIndex = 18;
+            lblBudget.Text = "Budget: ";
+            lblBudget.Visible = false;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(203, 300);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(484, 23);
+            progressBar1.TabIndex = 19;
+            progressBar1.Visible = false;
+            // 
+            // lblProgress
+            // 
+            lblProgress.AutoSize = true;
+            lblProgress.Font = new Font("Segoe UI", 12F);
+            lblProgress.Location = new Point(48, 330);
+            lblProgress.Name = "lblProgress";
+            lblProgress.Size = new Size(100, 32);
+            lblProgress.TabIndex = 20;
+            lblProgress.Text = "Progress: ";
+            lblProgress.Visible = false;
+            // 
+            // lblType
+            // 
+            lblType.AutoSize = true;
+            lblType.Font = new Font("Segoe UI", 12F);
+            lblType.Location = new Point(48, 77);
+            lblType.Name = "lblType";
+            lblType.Size = new Size(77, 32);
+            lblType.TabIndex = 2;
+            lblType.Text = "Type: ";
+            lblType.Visible = true;
             // 
             // FrmTransaction
             // 
@@ -188,6 +235,9 @@
             Controls.Add(txtBalance);
             Controls.Add(txtDescription);
             Controls.Add(lblBalance);
+            Controls.Add(lblBudget);
+            Controls.Add(progressBar1);
+            Controls.Add(lblProgress);
             Controls.Add(gridTransaction);
             Controls.Add(btnBack);
             Controls.Add(btnAdd);
@@ -202,7 +252,7 @@
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(5, 6, 5, 6);
             Name = "FrmTransaction";
-            Text = "FrmThuChiCaNhan";
+            Text = "Add Transaction";
             ((System.ComponentModel.ISupportInitialize)gridTransaction).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -211,23 +261,21 @@
         #endregion
 
         private Label lblTransaction;
-        private Label lblTenGD;
         private Label lblType;
         private Label lblCategory;
         private Label lblDate;
         private Label lblDescription;
-        private TextBox txtTenGD;
         private ComboBox cboType;
         private ComboBox cboCategory;
         private DateTimePicker date;
         private Button btnAdd;
-        private Button btnChange;
-        private Button btnDelete;
-        private Button btnSave;
         private Button btnBack;
         private DataGridView gridTransaction;
         private Label lblBalance;
         private RichTextBox txtDescription;
         private TextBox txtBalance;
+        private Label lblBudget;
+        private ProgressBar progressBar1;
+        private Label lblProgress;
     }
 }

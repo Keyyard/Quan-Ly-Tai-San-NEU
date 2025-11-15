@@ -43,6 +43,7 @@
             btnEdit = new Button();
             btnDelete = new Button();
             btnBack = new Button();
+            btnRefresh = new Button();
             dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -140,6 +141,7 @@
             cboType.Name = "cboType";
             cboType.Size = new Size(337, 40);
             cboType.TabIndex = 9;
+            cboType.SelectedIndexChanged += cboType_SelectedIndexChanged;
             // 
             // cboCategory
             // 
@@ -189,6 +191,18 @@
             btnBack.TabIndex = 14;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Font = new Font("Segoe UI", 12F);
+            btnRefresh.Location = new Point(591, 400);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(174, 53);
+            btnRefresh.TabIndex = 16;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // dataGridView1
             // 
@@ -198,6 +212,7 @@
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(681, 283);
             dataGridView1.TabIndex = 15;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // FrmTransactionHistory
             // 
@@ -205,6 +220,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 840);
             Controls.Add(dataGridView1);
+            Controls.Add(btnRefresh);
             Controls.Add(btnBack);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
@@ -221,7 +237,7 @@
             Controls.Add(lblType);
             Controls.Add(lblHistory);
             Name = "FrmTransactionHistory";
-            Text = "FrmTransactionHistory";
+            Text = "Transaction History";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -244,6 +260,7 @@
         private Button btnEdit;
         private Button btnDelete;
         private Button btnBack;
+        private Button btnRefresh;
         private DataGridView dataGridView1;
     }
 }

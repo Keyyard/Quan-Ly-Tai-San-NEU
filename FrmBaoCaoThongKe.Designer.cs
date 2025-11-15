@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lblTieuDe = new Label();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // lblTieuDe
@@ -39,16 +40,28 @@
             lblTieuDe.Name = "lblTieuDe";
             lblTieuDe.Size = new Size(312, 41);
             lblTieuDe.TabIndex = 0;
-            lblTieuDe.Text = "BÁO CÁO THỐNG KÊ";
+            lblTieuDe.Text = "Reports";
+            // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Segoe UI", 12F);
+            btnBack.Location = new Point(400, 100);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(160, 50);
+            btnBack.TabIndex = 1;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // FrmBaoCaoThongKe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(963, 450);
+            Controls.Add(btnBack);
             Controls.Add(lblTieuDe);
             Name = "FrmBaoCaoThongKe";
-            Text = "FrmBaoCaoThongKe";
+            Text = "Reports";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -56,5 +69,6 @@
         #endregion
 
         private Label lblTieuDe;
+        private Button btnBack;
     }
 }
