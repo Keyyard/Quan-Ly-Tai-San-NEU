@@ -3,9 +3,9 @@ using System.Data.SqlClient;
 
 namespace Quan_Ly_Tai_San
 {
-    public static class DBHelper
+    public static class dbConnect
     {
-        private static readonly string connectionString = @"Server=.\SQLEXPRESS;Database=FinanceTrackerDB;Trusted_Connection=True;";
+        private static readonly string connectionString = @"Server=.\SQLEXPRESS;Database=v;Trusted_Connection=True;";
 
         public static SqlConnection GetConnection()
         {
