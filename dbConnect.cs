@@ -23,9 +23,11 @@ namespace Quan_Ly_Tai_San
                 cnn.Close();
         }
 
-        public DataTable Lay_Dulieubang(string Sql)
+        public DataTable Lay_Dulieubang(string Sql, SqlParameter[] parameters = null)
         {
             KetNoi_Dulieu();
+            if (parameters != null)
+                cmd.Parameters.AddRange(parameters);
             ada = new SqlDataAdapter(Sql, cnn);
             dta = new DataTable();
             ada.Fill(dta);

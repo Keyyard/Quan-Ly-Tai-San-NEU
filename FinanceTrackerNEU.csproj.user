@@ -10,6 +10,15 @@
     <Compile Update="FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmIncomeCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmSavings.cs">
       <SubType>Form</SubType>
     </Compile>
