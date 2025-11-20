@@ -191,9 +191,9 @@
             lblLimit.Font = new Font("Segoe UI", 12F);
             lblLimit.Location = new Point(42, 196);
             lblLimit.Name = "lblLimit";
-            lblLimit.Size = new Size(78, 32);
+            lblLimit.Size = new Size(96, 32);
             lblLimit.TabIndex = 12;
-            lblLimit.Text = "Limit: ";
+            lblLimit.Text = "Budget: ";
             // 
             // FrmCategories
             // 

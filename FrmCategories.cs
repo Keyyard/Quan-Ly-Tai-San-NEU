@@ -12,10 +12,13 @@ namespace Quan_Ly_Tai_San
         public FrmCategories()
         {
             InitializeComponent();
-            // Populate the Type ComboBox
-            cboType.Items.Add("Income");
-            cboType.Items.Add("Expense");
-            cboType.SelectedIndex = 0; // Default to Income
+            // This form is specifically for Expense Categories only
+            // Hide the Type ComboBox and its label as they are not needed
+            cboType.Visible = false;
+            lblType.Visible = false;
+            // Ensure Budget fields are always visible for Expense Categories
+            lblLimit.Visible = true;
+            txtLimit.Visible = true;
             LoadCategories();
         }
 
@@ -44,8 +47,8 @@ namespace Quan_Ly_Tai_San
 
         private void cboType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string type = cboType.SelectedItem?.ToString();
-            lblLimit.Visible = txtLimit.Visible = (type == "Expense");
+            // This event handler is no longer needed as the Type ComboBox is hidden
+            // The form is specifically for Expense Categories, so Budget is always visible
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
