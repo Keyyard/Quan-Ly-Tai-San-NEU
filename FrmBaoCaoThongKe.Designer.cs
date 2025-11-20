@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             lblTieuDe = new Label();
             btnBack = new Button();
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -43,8 +44,10 @@
             lblDateStart = new Label();
             dateTimePickerEnd = new DateTimePicker();
             dateTimePickerStart = new DateTimePicker();
+            transactionItemBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)transactionItemBindingSource).BeginInit();
             SuspendLayout();
             // 
             // lblTieuDe
@@ -70,16 +73,16 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
             chart1.Location = new Point(35, 326);
             chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chart1.Series.Add(series1);
             chart1.Size = new Size(1048, 257);
             chart1.TabIndex = 2;
             chart1.Text = "chart1";
@@ -184,11 +187,15 @@
             dateTimePickerStart.Size = new Size(223, 39);
             dateTimePickerStart.TabIndex = 0;
             // 
+            // transactionItemBindingSource
+            // 
+            transactionItemBindingSource.DataSource = typeof(TransactionItem);
+            // 
             // FrmBaoCaoThongKe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 684);
+            ClientSize = new Size(1125, 620);
             Controls.Add(groupBox1);
             Controls.Add(btnCreateReport);
             Controls.Add(chart1);
@@ -200,6 +207,7 @@
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)transactionItemBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -218,5 +226,6 @@
         private Label lblDateStart;
         private DateTimePicker dateTimePickerEnd;
         private DateTimePicker dateTimePickerStart;
+        private BindingSource transactionItemBindingSource;
     }
 }

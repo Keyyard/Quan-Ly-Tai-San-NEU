@@ -15,13 +15,13 @@ namespace Quan_Ly_Tai_San
 {
     public partial class FrmBaoCaoThongKe : Form
     {
-        private int _userId;
+        //private int _UserId;
 
         public FrmBaoCaoThongKe(int UserId)
         {
             InitializeComponent();
+            //_UserId = UserId;
             LoadReports();
-            _userId = UserId;
         }
 
         dbConnect db = new dbConnect();
@@ -75,7 +75,7 @@ namespace Quan_Ly_Tai_San
 
         private void FrmBaoCaoThongKe_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCreateReport_Click(object sender, EventArgs e)
@@ -90,21 +90,20 @@ namespace Quan_Ly_Tai_San
             if (chkExpense.Checked) selectedTypes.Add("Expense");
             if (chkSaving.Checked) selectedTypes.Add("Saving");
             DisplayLineChart(items, selectedTypes);
-            //dataGridView1.DataSource = items;
         }
 
         private System.Collections.Generic.List<TransactionItem> LoadTransactions(DateTime start, DateTime end)
         {
             var items = new System.Collections.Generic.List<TransactionItem>();
             string query = @"
-                            SELECT transactionId, userId, type, categoryId, amount, date, description
-                            FROM transactions
-                            WHERE userId = @userId AND date BETWEEN @start AND @end
-                            ORDER BY date";
+                            SELECT TransactionId, UserId, Type, CategoryId, Amount, TransactionDate, Description
+                            FROM Transactions
+                            WHERE UserId = @UserId AND TransactionDate BETWEEN @start AND @end
+                            ORDER BY TransactionDate";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@userId", _userId),
+                new SqlParameter("@UserId", FrmSignIn.CurrentUserId),
                 new SqlParameter("@start", start),
                 new SqlParameter("@end", end)
             };
@@ -114,17 +113,16 @@ namespace Quan_Ly_Tai_San
             {
                 items.Add(new TransactionItem
                 {
-                    TransactionId = Convert.ToInt32(row["transactionId"]),
-                    userId = Convert.ToInt32(row["userId"]),
-                    Type = row["type"].ToString(),
-                    CategoryId = Convert.ToInt32(row["categoryId"]),
-                    Amount = Convert.ToDecimal(row["amount"]),
-                    Date = Convert.ToDateTime(row["date"]),
-                    Description = row["description"].ToString()
+                    TransactionId = Convert.ToInt32(row["TransactionId"]),
+                    UserId = Convert.ToInt32(row["UserId"]),
+                    Type = row["Type"].ToString(),
+                    CategoryId = Convert.ToInt32(row["CategoryId"]),
+                    Amount = Convert.ToDecimal(row["Amount"]),
+                    TransactionDate = Convert.ToDateTime(row["TransactionDate"]),
+                    Description = row["Description"].ToString()
                 });
-                MessageBox.Show("Items loaded: " + items.Count);
-                //dataGridView1.DataSource = items;
             }
+            MessageBox.Show("Items loaded: " + items.Count);
             return items;
         }
 
@@ -151,22 +149,22 @@ namespace Quan_Ly_Tai_San
 
             var grouped = items
                 .Where(t => selectedTypes.Contains(t.Type))
-                .GroupBy(t => t.Date.Date)
+                .GroupBy(t => t.TransactionDate.Date)
                 .Select(g => new
                 {
-                    Date = g.Key,
+                    TransactionDate = g.Key,
                     Income = g.Where(x => x.Type == "Income").Sum(x => x.Amount),
                     Expense = g.Where(x => x.Type == "Expense").Sum(x => x.Amount),
                     Savings = g.Where(x => x.Type == "Saving").Sum(x => x.Amount)
                 })
-                .OrderBy(x => x.Date)
+                .OrderBy(x => x.TransactionDate)
                 .ToList();
 
             foreach (var d in grouped)
             {
-                if (incomeSeries != null) incomeSeries.Points.AddXY(d.Date, d.Income);
-                if (expenseSeries != null) expenseSeries.Points.AddXY(d.Date, d.Expense);
-                if (savingsSeries != null) savingsSeries.Points.AddXY(d.Date, d.Savings);
+                if (incomeSeries != null) incomeSeries.Points.AddXY(d.TransactionDate, d.Income);
+                if (expenseSeries != null) expenseSeries.Points.AddXY(d.TransactionDate, d.Expense);
+                if (savingsSeries != null) savingsSeries.Points.AddXY(d.TransactionDate, d.Savings);
             }
 
             if (incomeSeries != null) chart1.Series.Add(incomeSeries);
@@ -177,11 +175,12 @@ namespace Quan_Ly_Tai_San
     public class TransactionItem
     {
         public int TransactionId { get; set; }
-        public int userId { get; set; }
+        public int UserId { get; set; }
         public string Type { get; set; }
+
         public int CategoryId { get; set; }
         public decimal Amount { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime TransactionDate { get; set; }
         public string Description { get; set; }
     }
 }

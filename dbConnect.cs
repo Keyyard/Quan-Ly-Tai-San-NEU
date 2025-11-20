@@ -12,7 +12,7 @@ namespace Quan_Ly_Tai_San
 
         public void KetNoi_Dulieu()
         {
-            string sql1 = @"Data Source=tmh\SQLEXPRESS;Initial Catalog=financeTrackerdb;Integrated Security=True;TrustServerCertificate=True";
+            string sql1 = @"Data Source=LAPTOP-PPDJKGC9\SQLEXPRESS;Initial Catalog=financeTrackerdb;Integrated Security=True;TrustServerCertificate=True";
             cnn = new SqlConnection(sql1);
             cnn.Open();
         }
@@ -26,9 +26,10 @@ namespace Quan_Ly_Tai_San
         public DataTable Lay_Dulieubang(string Sql, SqlParameter[] parameters = null)
         {
             KetNoi_Dulieu();
+            cmd = new SqlCommand(Sql, cnn);
             if (parameters != null)
                 cmd.Parameters.AddRange(parameters);
-            ada = new SqlDataAdapter(Sql, cnn);
+            ada = new SqlDataAdapter(cmd);
             dta = new DataTable();
             ada.Fill(dta);
             return dta;

@@ -63,3 +63,5 @@ C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\refint\
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\FinanceTrackerNEU.pdb
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\FinanceTrackerNEU.genruntimeconfig.cache
 C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\obj\Debug\net8.0-windows\ref\FinanceTrackerNEU.dll
+C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\ntduo\Source\Repos\Quan-Ly-Tai-San-NEU\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll

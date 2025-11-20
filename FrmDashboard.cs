@@ -75,7 +75,7 @@ namespace Quan_Ly_Tai_San
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-            FrmBaoCaoThongKe reportForm = new FrmBaoCaoThongKe();
+            FrmBaoCaoThongKe reportForm = new FrmBaoCaoThongKe(UserId);
             reportForm.ShowDialog();
         }
 
@@ -88,5 +88,6 @@ namespace Quan_Ly_Tai_San
         {
             Application.Exit();
         }
+        public int UserId { get; set; }
     }
 }
