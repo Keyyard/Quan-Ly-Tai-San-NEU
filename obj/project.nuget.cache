@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "J2FeD85Qx2g=",
+  "dgSpecHash": "B6+wZrEYcIE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ntduo\\Source\\Repos\\Quan-Ly-Tai-San-NEU\\FinanceTrackerNEU.csproj",
+  "projectFilePath": "/home/runner/work/Quan-Ly-Tai-San-NEU/Quan-Ly-Tai-San-NEU/FinanceTrackerNEU.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ntduo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\ntduo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\ntduo\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\ntduo\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\ntduo\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
-    "C:\\Users\\ntduo\\.nuget\\packages\\winforms.datavisualization\\1.10.0\\winforms.datavisualization.1.10.0.nupkg.sha512"
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/runtime.native.system.data.sqlclient.sni/4.4.0/runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/system.data.sqlclient/4.9.0/system.data.sqlclient.4.9.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/winforms.datavisualization/1.10.0/winforms.datavisualization.1.10.0.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/microsoft.windowsdesktop.app.ref/8.0.22/microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/runner/work/Quan-Ly-Tai-San-NEU/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
   ],
   "logs": []
 }
