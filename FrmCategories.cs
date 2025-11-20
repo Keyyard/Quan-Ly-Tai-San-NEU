@@ -12,6 +12,10 @@ namespace Quan_Ly_Tai_San
         public FrmCategories()
         {
             InitializeComponent();
+            // Populate the Type ComboBox
+            cboType.Items.Add("Income");
+            cboType.Items.Add("Expense");
+            cboType.SelectedIndex = 0; // Default to Income
             LoadCategories();
         }
 

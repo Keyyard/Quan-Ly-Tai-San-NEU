@@ -1,3 +1,18 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
 # Build artifacts
 bin/
 obj/
@@ -10,3 +25,13 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
+
+# Build Results
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# NuGet Packages
+*.nupkg
+**/packages/*
