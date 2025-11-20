@@ -1,5 +1,13 @@
 # Build results
 [Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
 [Rr]elease/
 x64/
 x86/
@@ -13,6 +21,32 @@ bld/
 
 # Visual Studio cache/options
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+# Others
+*.cache
+*.log
+*.tmp
 # Build artifacts
 bin/
 obj/
