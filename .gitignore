@@ -13,6 +13,14 @@ bld/
 
 # Visual Studio cache/options
 .vs/
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio cache/options
+.vs/
+
+# User-specific files
 *.user
 *.suo
 *.userosscache
