@@ -48,7 +48,13 @@ namespace Quan_Ly_Tai_San
             db.KetNoi_Dulieu();
             try
             {
-                string query = "SELECT CurrentBalance FROM Users WHERE UserId = @UserId";
+                // Calculate balance from all transactions instead of using the stored fixed value
+                string query = @"SELECT 
+                                    ISNULL(SUM(CASE WHEN Type = 'Income' THEN Amount ELSE 0 END), 0) - 
+                                    ISNULL(SUM(CASE WHEN Type = 'Expense' THEN Amount ELSE 0 END), 0) - 
+                                    ISNULL(SUM(CASE WHEN Type = 'Saving' THEN Amount ELSE 0 END), 0) AS Balance
+                                 FROM Transactions 
+                                 WHERE UserId = @UserId";
                 SqlCommand cmd = new SqlCommand(query, db.cnn);
                 cmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
                 object result = cmd.ExecuteScalar();

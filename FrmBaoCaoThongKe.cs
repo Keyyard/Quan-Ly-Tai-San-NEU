@@ -50,8 +50,13 @@ namespace Quan_Ly_Tai_San
                 savingCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
                 decimal totalSaving = (decimal)(savingCmd.ExecuteScalar() ?? 0);
 
-                // Current Balance
-                string balanceQuery = "SELECT CurrentBalance FROM Users WHERE UserId = @UserId";
+                // Current Balance - Calculate from transactions instead of using stored value
+                string balanceQuery = @"SELECT 
+                                          ISNULL(SUM(CASE WHEN Type = 'Income' THEN Amount ELSE 0 END), 0) - 
+                                          ISNULL(SUM(CASE WHEN Type = 'Expense' THEN Amount ELSE 0 END), 0) - 
+                                          ISNULL(SUM(CASE WHEN Type = 'Saving' THEN Amount ELSE 0 END), 0) AS Balance
+                                        FROM Transactions 
+                                        WHERE UserId = @UserId";
                 SqlCommand balanceCmd = new SqlCommand(balanceQuery, db.cnn);
                 balanceCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
                 decimal balance = (decimal)balanceCmd.ExecuteScalar();
