@@ -110,6 +110,7 @@
             cboType.Name = "cboType";
             cboType.Size = new Size(362, 40);
             cboType.TabIndex = 6;
+            cboType.SelectedIndexChanged += cboType_SelectedIndexChanged;
             // 
             // btnEdit
             // 
@@ -120,6 +121,7 @@
             btnEdit.TabIndex = 7;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
@@ -130,6 +132,7 @@
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -140,6 +143,7 @@
             btnAdd.TabIndex = 9;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnBack
             // 
@@ -171,6 +175,7 @@
             dataCategories.RowHeadersWidth = 62;
             dataCategories.Size = new Size(746, 250);
             dataCategories.TabIndex = 11;
+            dataCategories.SelectionChanged += dataCategories_SelectionChanged;
             // 
             // txtLimit
             // 
