@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             lblTieuDe = new Label();
             btnBack = new Button();
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -45,6 +45,7 @@
             dateTimePickerEnd = new DateTimePicker();
             dateTimePickerStart = new DateTimePicker();
             transactionItemBindingSource = new BindingSource(components);
+            btnExport = new Button();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)transactionItemBindingSource).BeginInit();
@@ -63,7 +64,7 @@
             // btnBack
             // 
             btnBack.Font = new Font("Segoe UI", 12F);
-            btnBack.Location = new Point(923, 227);
+            btnBack.Location = new Point(923, 239);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(160, 50);
             btnBack.TabIndex = 1;
@@ -73,16 +74,16 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            chart1.Legends.Add(legend3);
             chart1.Location = new Point(35, 326);
             chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            chart1.Series.Add(series3);
             chart1.Size = new Size(1048, 257);
             chart1.TabIndex = 2;
             chart1.Text = "chart1";
@@ -191,11 +192,23 @@
             // 
             transactionItemBindingSource.DataSource = typeof(TransactionItem);
             // 
+            // btnExport
+            // 
+            btnExport.Font = new Font("Segoe UI", 12F);
+            btnExport.Location = new Point(923, 171);
+            btnExport.Name = "btnExport";
+            btnExport.Size = new Size(160, 50);
+            btnExport.TabIndex = 5;
+            btnExport.Text = "Export";
+            btnExport.UseVisualStyleBackColor = true;
+            btnExport.Click += btnExport_Click;
+            // 
             // FrmBaoCaoThongKe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1125, 620);
+            Controls.Add(btnExport);
             Controls.Add(groupBox1);
             Controls.Add(btnCreateReport);
             Controls.Add(chart1);
@@ -227,5 +240,6 @@
         private DateTimePicker dateTimePickerEnd;
         private DateTimePicker dateTimePickerStart;
         private BindingSource transactionItemBindingSource;
+        private Button btnExport;
     }
 }

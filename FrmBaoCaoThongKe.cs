@@ -80,7 +80,7 @@ namespace Quan_Ly_Tai_San
 
         private void FrmBaoCaoThongKe_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCreateReport_Click(object sender, EventArgs e)
@@ -175,6 +175,11 @@ namespace Quan_Ly_Tai_San
             if (incomeSeries != null) chart1.Series.Add(incomeSeries);
             if (expenseSeries != null) chart1.Series.Add(expenseSeries);
             if (savingsSeries != null) chart1.Series.Add(savingsSeries);
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     public class TransactionItem
