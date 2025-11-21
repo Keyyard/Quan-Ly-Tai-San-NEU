@@ -50,7 +50,7 @@ namespace Quan_Ly_Tai_San
                 savingCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
                 decimal totalSaving = (decimal)(savingCmd.ExecuteScalar() ?? 0);
 
-                // Current Balance - Calculate from transactions instead of using stored value
+                // Current Balance - Calculate from transactions
                 string balanceQuery = @"SELECT 
                                           ISNULL(SUM(CASE WHEN Type = 'Income' THEN Amount ELSE 0 END), 0) - 
                                           ISNULL(SUM(CASE WHEN Type = 'Expense' THEN Amount ELSE 0 END), 0) - 

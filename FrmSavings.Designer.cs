@@ -34,7 +34,7 @@
             dataSavings = new DataGridView();
             txtName = new TextBox();
             txtGoal = new TextBox();
-            btnSearch = new Button();
+            btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
             btnDeposit = new Button();
@@ -46,9 +46,10 @@
             // 
             lblSavings.AutoSize = true;
             lblSavings.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            lblSavings.Location = new Point(393, 25);
+            lblSavings.Location = new Point(314, 20);
+            lblSavings.Margin = new Padding(2, 0, 2, 0);
             lblSavings.Name = "lblSavings";
-            lblSavings.Size = new Size(126, 41);
+            lblSavings.Size = new Size(104, 35);
             lblSavings.TabIndex = 0;
             lblSavings.Text = "Savings";
             // 
@@ -56,9 +57,10 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 12F);
-            lblName.Location = new Point(40, 86);
+            lblName.Location = new Point(32, 69);
+            lblName.Margin = new Padding(2, 0, 2, 0);
             lblName.Name = "lblName";
-            lblName.Size = new Size(90, 32);
+            lblName.Size = new Size(73, 28);
             lblName.TabIndex = 1;
             lblName.Text = "Name: ";
             // 
@@ -66,55 +68,61 @@
             // 
             lblGoal.AutoSize = true;
             lblGoal.Font = new Font("Segoe UI", 12F);
-            lblGoal.Location = new Point(40, 147);
+            lblGoal.Location = new Point(32, 118);
+            lblGoal.Margin = new Padding(2, 0, 2, 0);
             lblGoal.Name = "lblGoal";
-            lblGoal.Size = new Size(74, 32);
+            lblGoal.Size = new Size(62, 28);
             lblGoal.TabIndex = 2;
             lblGoal.Text = "Goal: ";
             // 
             // dataSavings
             // 
             dataSavings.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataSavings.Location = new Point(52, 203);
+            dataSavings.Location = new Point(42, 162);
+            dataSavings.Margin = new Padding(2, 2, 2, 2);
             dataSavings.Name = "dataSavings";
             dataSavings.RowHeadersWidth = 62;
-            dataSavings.Size = new Size(490, 225);
+            dataSavings.Size = new Size(392, 180);
             dataSavings.TabIndex = 3;
             dataSavings.SelectionChanged += dataSavings_SelectionChanged;
             // 
             // txtName
             // 
             txtName.Font = new Font("Segoe UI", 12F);
-            txtName.Location = new Point(129, 91);
+            txtName.Location = new Point(103, 73);
+            txtName.Margin = new Padding(2, 2, 2, 2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(412, 39);
+            txtName.Size = new Size(330, 34);
             txtName.TabIndex = 4;
             // 
             // txtGoal
             // 
             txtGoal.Font = new Font("Segoe UI", 12F);
-            txtGoal.Location = new Point(130, 147);
+            txtGoal.Location = new Point(104, 118);
+            txtGoal.Margin = new Padding(2, 2, 2, 2);
             txtGoal.Name = "txtGoal";
-            txtGoal.Size = new Size(412, 39);
+            txtGoal.Size = new Size(330, 34);
             txtGoal.TabIndex = 5;
             // 
-            // btnSearch
+            // btnAdd
             // 
-            btnSearch.Font = new Font("Segoe UI", 12F);
-            btnSearch.Location = new Point(589, 91);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(162, 54);
-            btnSearch.TabIndex = 6;
-            btnSearch.Text = "Add";
-            btnSearch.UseVisualStyleBackColor = true;
-            btnSearch.Click += btnSearch_Click;
+            btnAdd.Font = new Font("Segoe UI", 12F);
+            btnAdd.Location = new Point(471, 73);
+            btnAdd.Margin = new Padding(2, 2, 2, 2);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(130, 43);
+            btnAdd.TabIndex = 6;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
             // 
             btnEdit.Font = new Font("Segoe UI", 12F);
-            btnEdit.Location = new Point(589, 168);
+            btnEdit.Location = new Point(471, 134);
+            btnEdit.Margin = new Padding(2, 2, 2, 2);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(162, 54);
+            btnEdit.Size = new Size(130, 43);
             btnEdit.TabIndex = 7;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = true;
@@ -123,9 +131,10 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Segoe UI", 12F);
-            btnDelete.Location = new Point(589, 252);
+            btnDelete.Location = new Point(471, 202);
+            btnDelete.Margin = new Padding(2, 2, 2, 2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(162, 54);
+            btnDelete.Size = new Size(130, 43);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -134,9 +143,10 @@
             // btnDeposit
             // 
             btnDeposit.Font = new Font("Segoe UI", 12F);
-            btnDeposit.Location = new Point(589, 252);
+            btnDeposit.Location = new Point(471, 202);
+            btnDeposit.Margin = new Padding(2, 2, 2, 2);
             btnDeposit.Name = "btnDeposit";
-            btnDeposit.Size = new Size(162, 54);
+            btnDeposit.Size = new Size(130, 43);
             btnDeposit.TabIndex = 10;
             btnDeposit.Text = "Deposit";
             btnDeposit.UseVisualStyleBackColor = true;
@@ -145,9 +155,10 @@
             // btnBack
             // 
             btnBack.Font = new Font("Segoe UI", 12F);
-            btnBack.Location = new Point(589, 320);
+            btnBack.Location = new Point(471, 256);
+            btnBack.Margin = new Padding(2, 2, 2, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(162, 54);
+            btnBack.Size = new Size(130, 43);
             btnBack.TabIndex = 9;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -155,20 +166,21 @@
             // 
             // FrmSavings
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(640, 360);
             Controls.Add(btnBack);
             Controls.Add(btnDeposit);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
-            Controls.Add(btnSearch);
+            Controls.Add(btnAdd);
             Controls.Add(txtGoal);
             Controls.Add(txtName);
             Controls.Add(dataSavings);
             Controls.Add(lblGoal);
             Controls.Add(lblName);
             Controls.Add(lblSavings);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmSavings";
             Text = "Manage Savings";
             ((System.ComponentModel.ISupportInitialize)dataSavings).EndInit();
@@ -184,7 +196,7 @@
         private DataGridView dataSavings;
         private TextBox txtName;
         private TextBox txtGoal;
-        private Button btnSearch;
+        private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
         private Button btnDeposit;
