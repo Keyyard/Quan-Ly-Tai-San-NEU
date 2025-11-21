@@ -47,10 +47,24 @@ amount (decimal)
 date (datetime)
 description
 }
-```- Categories are separated into IncomeCategories and ExpenseCategories for better control.
+```
+
+- Categories are separated into IncomeCategories and ExpenseCategories for better control.
 - ExpenseCategories include Budget and CurrentSpent for tracking spending limits.
 - SavingsGoals manage savings targets with current progress.
 - Transactions reference the appropriate category table based on type.
+- Index on SQl to optimize searches
+
+```
+CREATE INDEX idx_product_id
+ON Sales (product_id);
+```
+
+```
+SELECT *
+FROM People WITH (INDEX(People_Name))
+WHERE [Name] = 'Peter';
+```
 
 ## Forms
 

@@ -40,7 +40,7 @@ namespace Quan_Ly_Tai_San
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e) // Using as Add
+        private void btnAdd_Click(object sender, EventArgs e) // Using as Add
         {
             string name = txtName.Text.Trim();
             decimal goal;

@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\",
+  "WorkspaceRootPath": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\frmsavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmsavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|c:\\users\\ntduo\\source\\repos\\quan-ly-tai-san-neu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmbaocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|d:\\neu\\.net\\exam\\quan ly tai san\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|D:\\NEU\\.net\\exam\\Quan Ly Tai San\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A757BA61-DAA4-40D6-B777-FF944E33D527}|FinanceTrackerNEU.csproj|solutionrelative:frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,25 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FrmBaoCaoThongKe.cs",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmBaoCaoThongKe.cs",
               "RelativeDocumentMoniker": "FrmBaoCaoThongKe.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmBaoCaoThongKe.cs",
               "RelativeToolTip": "FrmBaoCaoThongKe.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAewFsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:30:40.53Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -63,12 +63,36 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmSavings.cs [Design]",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmSavings.cs",
+              "RelativeDocumentMoniker": "FrmSavings.cs",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmSavings.cs [Design]",
+              "RelativeToolTip": "FrmSavings.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T01:01:50.598Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FrmBaoCaoThongKe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmBaoCaoThongKe.cs",
               "RelativeDocumentMoniker": "FrmBaoCaoThongKe.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmBaoCaoThongKe.cs [Design]",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmBaoCaoThongKe.cs [Design]",
               "RelativeToolTip": "FrmBaoCaoThongKe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T08:02:18.946Z",
@@ -76,36 +100,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "dbConnect.cs",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\dbConnect.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\dbConnect.cs",
               "RelativeDocumentMoniker": "dbConnect.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\dbConnect.cs",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\dbConnect.cs",
               "RelativeToolTip": "dbConnect.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA/wCAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:44:45.501Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmDashboard.cs",
-              "RelativeDocumentMoniker": "FrmDashboard.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmDashboard.cs",
-              "RelativeToolTip": "FrmDashboard.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAUwFoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:32:14.602Z",
+              "WhenOpened": "2025-11-20T07:44:45.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FrmDashboard.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmDashboard.cs",
+              "RelativeDocumentMoniker": "FrmDashboard.cs",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmDashboard.cs",
+              "RelativeToolTip": "FrmDashboard.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwFoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:32:14.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\Program.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\Program.cs",
+              "ToolTip": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,12 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FrmCategories.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmCategories.cs",
+              "DocumentMoniker": "D:\\NEU\\.net\\exam\\Quan Ly Tai San\\FrmCategories.cs",
               "RelativeDocumentMoniker": "FrmCategories.cs",
               "ToolTip": "C:\\Users\\ntduo\\source\\repos\\Quan-Ly-Tai-San-NEU\\FrmCategories.cs [Design]",
-              "RelativeToolTip": "FrmCategories.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T07:58:05.817Z"
             }

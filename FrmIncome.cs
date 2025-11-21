@@ -46,7 +46,6 @@ namespace Quan_Ly_Tai_San
             db.KetNoi_Dulieu();
             try
             {
-                // Calculate balance from all transactions instead of using the stored fixed value
                 string query = @"SELECT 
                                     ISNULL(SUM(CASE WHEN Type = 'Income' THEN Amount ELSE 0 END), 0) - 
                                     ISNULL(SUM(CASE WHEN Type = 'Expense' THEN Amount ELSE 0 END), 0) - 
