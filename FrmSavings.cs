@@ -18,25 +18,17 @@ namespace Quan_Ly_Tai_San
         private void LoadSavings()
         {
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string query = @"SELECT GoalId, Name, GoalAmount, CurrentAmount, 
-                                 CASE WHEN GoalAmount > 0 THEN (CurrentAmount / GoalAmount) * 100 ELSE 0 END as Progress
-                                 FROM SavingsGoals WHERE UserId = @UserId";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, db.cnn);
-                adapter.SelectCommand.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId)
+                };
+                DataTable dt = db.Lay_Dulieu_Proc("sp_GetSavingsGoals", parameters);
                 dataSavings.DataSource = dt;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi tải tiết kiệm: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -51,16 +43,15 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string insertQuery = @"INSERT INTO SavingsGoals (UserId, Name, GoalAmount) 
-                                       VALUES (@UserId, @Name, @Goal)";
-                SqlCommand insertCmd = new SqlCommand(insertQuery, db.cnn);
-                insertCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                insertCmd.Parameters.AddWithValue("@Name", name);
-                insertCmd.Parameters.AddWithValue("@Goal", goal);
-                insertCmd.ExecuteNonQuery();
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId),
+                    new SqlParameter("@Name", name),
+                    new SqlParameter("@GoalAmount", goal),
+                    new SqlParameter("@Description", DBNull.Value)
+                };
+                db.ThucThi_Proc("sp_InsertSavingsGoal", parameters);
 
                 MessageBox.Show("Tiết kiệm đã được tạo.");
                 LoadSavings();
@@ -69,10 +60,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi tạo tiết kiệm: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -104,15 +91,14 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string updateQuery = "UPDATE SavingsGoals SET Name = @Name, GoalAmount = @Goal WHERE GoalId = @GoalId";
-                SqlCommand updateCmd = new SqlCommand(updateQuery, db.cnn);
-                updateCmd.Parameters.AddWithValue("@Name", name);
-                updateCmd.Parameters.AddWithValue("@Goal", goal);
-                updateCmd.Parameters.AddWithValue("@GoalId", selectedCategoryId);
-                updateCmd.ExecuteNonQuery();
+                SqlParameter[] parameters = {
+                    new SqlParameter("@GoalId", selectedCategoryId),
+                    new SqlParameter("@Name", name),
+                    new SqlParameter("@GoalAmount", goal)
+                };
+                db.ThucThi_Proc("sp_UpdateSavingsGoal", parameters);
 
                 MessageBox.Show("Tiết kiệm đã được cập nhật.");
                 LoadSavings();
@@ -120,10 +106,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi chỉnh sửa: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -138,13 +120,12 @@ namespace Quan_Ly_Tai_San
             if (MessageBox.Show("Bạn có chắc muốn xóa tiết kiệm này?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 dbConnect db = new dbConnect();
-                db.KetNoi_Dulieu();
                 try
                 {
-                    string deleteQuery = "DELETE FROM SavingsGoals WHERE GoalId = @GoalId";
-                    SqlCommand deleteCmd = new SqlCommand(deleteQuery, db.cnn);
-                    deleteCmd.Parameters.AddWithValue("@GoalId", selectedCategoryId);
-                    deleteCmd.ExecuteNonQuery();
+                    SqlParameter[] parameters = {
+                        new SqlParameter("@GoalId", selectedCategoryId)
+                    };
+                    db.ThucThi_Proc("sp_DeleteSavingsGoal", parameters);
 
                     MessageBox.Show("Tiết kiệm đã được xóa.");
                     LoadSavings();
@@ -153,10 +134,6 @@ namespace Quan_Ly_Tai_San
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi xóa: " + ex.Message);
-                }
-                finally
-                {
-                    db.HuyKetNoi();
                 }
             }
         }
@@ -184,31 +161,16 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                // Insert transaction
-                string insertQuery = @"INSERT INTO Transactions (UserId, Type, CategoryId, Amount, Description)
-                                       VALUES (@UserId, 'Saving', @CategoryId, @Amount, 'Deposit to savings')";
-                SqlCommand insertCmd = new SqlCommand(insertQuery, db.cnn);
-                insertCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                insertCmd.Parameters.AddWithValue("@CategoryId", selectedCategoryId);
-                insertCmd.Parameters.AddWithValue("@Amount", amount);
-                insertCmd.ExecuteNonQuery();
-
-                // Update balance
-                string balanceQuery = "UPDATE Users SET CurrentBalance = CurrentBalance - @Amount WHERE UserId = @UserId";
-                SqlCommand balanceCmd = new SqlCommand(balanceQuery, db.cnn);
-                balanceCmd.Parameters.AddWithValue("@Amount", amount);
-                balanceCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                balanceCmd.ExecuteNonQuery();
-
-                // Update goal
-                string goalQuery = "UPDATE SavingsGoals SET CurrentAmount = CurrentAmount + @Amount WHERE GoalId = @GoalId";
-                SqlCommand goalCmd = new SqlCommand(goalQuery, db.cnn);
-                goalCmd.Parameters.AddWithValue("@Amount", amount);
-                goalCmd.Parameters.AddWithValue("@GoalId", selectedCategoryId);
-                goalCmd.ExecuteNonQuery();
+                // Insert transaction - trigger will handle balance and goal updates
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId),
+                    new SqlParameter("@CategoryId", selectedCategoryId),
+                    new SqlParameter("@Amount", amount),
+                    new SqlParameter("@Description", "Deposit to savings")
+                };
+                db.ThucThi_Proc("sp_InsertSavingTransaction", parameters);
 
                 MessageBox.Show("Đã gửi tiền vào tiết kiệm.");
                 LoadSavings();
@@ -216,10 +178,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi gửi tiền: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
