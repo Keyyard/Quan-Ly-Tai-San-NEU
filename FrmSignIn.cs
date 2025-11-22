@@ -20,19 +20,19 @@ namespace Quan_Ly_Tai_San
             string password = txtPassword.Text;
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string query = "SELECT UserId, Username FROM Users WHERE Username = @Username AND Password = @Password";
-                SqlCommand cmd = new SqlCommand(query, db.cnn);
-                cmd.Parameters.AddWithValue("@Username", username);
-                cmd.Parameters.AddWithValue("@Password", password);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
+                SqlParameter[] parameters = {
+                    new SqlParameter("@Username", username),
+                    new SqlParameter("@Password", password)
+                };
+                
+                DataTable result = db.Lay_Dulieu_Proc("sp_UserLogin", parameters);
+                
+                if (result.Rows.Count > 0)
                 {
-                    CurrentUserId = (int)reader["UserId"];
-                    CurrentUsername = reader["Username"].ToString();
+                    CurrentUserId = (int)result.Rows[0]["UserId"];
+                    CurrentUsername = result.Rows[0]["Username"].ToString();
                     this.Hide();
                     FrmDashboard mainForm = new FrmDashboard();
                     mainForm.ShowDialog();
@@ -46,10 +46,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 

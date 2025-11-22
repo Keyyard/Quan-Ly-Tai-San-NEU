@@ -21,31 +21,20 @@ namespace Quan_Ly_Tai_San
         private void LoadBalance()
         {
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                // Calculate balance from all transactions
-                string query = @"SELECT 
-                                    ISNULL(SUM(CASE WHEN Type = 'Income' THEN Amount ELSE 0 END), 0) - 
-                                    ISNULL(SUM(CASE WHEN Type = 'Expense' THEN Amount ELSE 0 END), 0) - 
-                                    ISNULL(SUM(CASE WHEN Type = 'Saving' THEN Amount ELSE 0 END), 0) AS Balance
-                                 FROM Transactions 
-                                 WHERE UserId = @UserId";
-                SqlCommand cmd = new SqlCommand(query, db.cnn);
-                cmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                object result = cmd.ExecuteScalar();
-                if (result != null)
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId)
+                };
+                System.Data.DataTable result = db.Lay_Dulieu_Proc("sp_GetUserBalance", parameters);
+                if (result.Rows.Count > 0)
                 {
-                    lblBalance.Text = $"Current Balance: {Convert.ToDecimal(result):N2} VND";
+                    lblBalance.Text = $"Current Balance: {Convert.ToDecimal(result.Rows[0]["Balance"]):N2} VND";
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading balance: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 

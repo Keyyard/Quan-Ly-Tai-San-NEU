@@ -23,26 +23,25 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                // Check if username exists
-                string checkQuery = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
-                SqlCommand checkCmd = new SqlCommand(checkQuery, db.cnn);
-                checkCmd.Parameters.AddWithValue("@Username", username);
-                int count = (int)checkCmd.ExecuteScalar();
-                if (count > 0)
+                SqlParameter resultParam = new SqlParameter("@Result", SqlDbType.Int);
+                resultParam.Direction = ParameterDirection.Output;
+                
+                SqlParameter[] parameters = {
+                    new SqlParameter("@Username", username),
+                    new SqlParameter("@Password", password),
+                    resultParam
+                };
+                
+                db.ThucThi_Proc("sp_UserRegister", parameters);
+                
+                int result = (int)resultParam.Value;
+                if (result == -1)
                 {
                     MessageBox.Show("Tên đăng nhập đã tồn tại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
-                // Insert new user
-                string insertQuery = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
-                SqlCommand insertCmd = new SqlCommand(insertQuery, db.cnn);
-                insertCmd.Parameters.AddWithValue("@Username", username);
-                insertCmd.Parameters.AddWithValue("@Password", password);
-                insertCmd.ExecuteNonQuery();
 
                 MessageBox.Show("Đăng ký thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
@@ -50,10 +49,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 

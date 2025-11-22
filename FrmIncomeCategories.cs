@@ -18,23 +18,17 @@ namespace Quan_Ly_Tai_San
         private void LoadCategories()
         {
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string query = "SELECT CategoryId, Name, Description FROM IncomeCategories WHERE UserId = @UserId";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, db.cnn);
-                adapter.SelectCommand.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId)
+                };
+                DataTable dt = db.Lay_Dulieu_Proc("sp_GetIncomeCategories", parameters);
                 dataCategories.DataSource = dt;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading categories: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -50,16 +44,14 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string insertQuery = @"INSERT INTO IncomeCategories (UserId, Name, Description) 
-                                       VALUES (@UserId, @Name, @Description)";
-                SqlCommand insertCmd = new SqlCommand(insertQuery, db.cnn);
-                insertCmd.Parameters.AddWithValue("@UserId", FrmSignIn.CurrentUserId);
-                insertCmd.Parameters.AddWithValue("@Name", name);
-                insertCmd.Parameters.AddWithValue("@Description", description);
-                insertCmd.ExecuteNonQuery();
+                SqlParameter[] parameters = {
+                    new SqlParameter("@UserId", FrmSignIn.CurrentUserId),
+                    new SqlParameter("@Name", name),
+                    new SqlParameter("@Description", description)
+                };
+                db.ThucThi_Proc("sp_InsertIncomeCategory", parameters);
 
                 MessageBox.Show("Category added.");
                 LoadCategories();
@@ -68,10 +60,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Error adding category: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -104,16 +92,14 @@ namespace Quan_Ly_Tai_San
             }
 
             dbConnect db = new dbConnect();
-            db.KetNoi_Dulieu();
             try
             {
-                string updateQuery = @"UPDATE IncomeCategories SET Name = @Name, Description = @Description
-                                       WHERE CategoryId = @CategoryId";
-                SqlCommand updateCmd = new SqlCommand(updateQuery, db.cnn);
-                updateCmd.Parameters.AddWithValue("@Name", name);
-                updateCmd.Parameters.AddWithValue("@Description", description);
-                updateCmd.Parameters.AddWithValue("@CategoryId", selectedCategoryId);
-                updateCmd.ExecuteNonQuery();
+                SqlParameter[] parameters = {
+                    new SqlParameter("@CategoryId", selectedCategoryId),
+                    new SqlParameter("@Name", name),
+                    new SqlParameter("@Description", description)
+                };
+                db.ThucThi_Proc("sp_UpdateIncomeCategory", parameters);
 
                 MessageBox.Show("Category updated.");
                 LoadCategories();
@@ -121,10 +107,6 @@ namespace Quan_Ly_Tai_San
             catch (Exception ex)
             {
                 MessageBox.Show("Error editing category: " + ex.Message);
-            }
-            finally
-            {
-                db.HuyKetNoi();
             }
         }
 
@@ -139,13 +121,12 @@ namespace Quan_Ly_Tai_San
             if (MessageBox.Show("Are you sure you want to delete this category?", "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 dbConnect db = new dbConnect();
-                db.KetNoi_Dulieu();
                 try
                 {
-                    string deleteQuery = "DELETE FROM IncomeCategories WHERE CategoryId = @CategoryId";
-                    SqlCommand deleteCmd = new SqlCommand(deleteQuery, db.cnn);
-                    deleteCmd.Parameters.AddWithValue("@CategoryId", selectedCategoryId);
-                    deleteCmd.ExecuteNonQuery();
+                    SqlParameter[] parameters = {
+                        new SqlParameter("@CategoryId", selectedCategoryId)
+                    };
+                    db.ThucThi_Proc("sp_DeleteIncomeCategory", parameters);
 
                     MessageBox.Show("Category deleted.");
                     LoadCategories();
@@ -154,10 +135,6 @@ namespace Quan_Ly_Tai_San
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error deleting: " + ex.Message);
-                }
-                finally
-                {
-                    db.HuyKetNoi();
                 }
             }
         }
